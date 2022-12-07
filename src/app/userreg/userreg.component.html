@@ -1,0 +1,106 @@
+<div class="container">
+
+    <div class="row">
+
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <h1>Signup</h1>
+            <div class="row g-3">
+                
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+
+                    <label for="" class="form-label">Name</label>
+
+                    <input name="name" [(ngModel)]="name" type="text" class="form-control">
+                    
+
+                </div>
+
+                
+
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+                    <label class="form-label">Address</label>
+
+
+
+                    <textarea name="address" [(ngModel)]="address"  id="" cols="160" rows="2"></textarea>
+
+
+
+
+
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+
+                    <label class="form-label">Phone no</label>
+
+
+
+                    <input name="phn" [(ngModel)]="phn" type="text" class="form-control">
+
+
+
+                </div>
+
+                
+
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+
+                    <label class="form-label">Email Id</label>
+
+
+
+                    <input name="email" [(ngModel)]="email"type="text" class="form-control">
+
+
+
+                </div>
+
+                
+                
+
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+                    <label class="form-label">Password</label>
+
+
+
+                    <input name="password" [(ngModel)]="password" type="text" class="form-control">
+
+
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+                    <label class="form-label">Confirm Password</label>
+
+
+
+                    <input name="confirmpass" [(ngModel)]="confirmpass" type="text" class="form-control">
+
+
+
+                </div>
+
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+                   
+
+                    <button (click)="readValues()" class="btn btn-success">Register</button>
+
+
+
+                </div>
+
+            </div>
+            <div>
+                
+                <a routeLink="">Click here for user Login</a> 
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
