@@ -9,6 +9,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { UserregComponent } from './userreg/userreg.component';
 import { UserloginComponent } from './userlogin/userlogin.component';
 import { AddproductComponent } from './addproduct/addproduct.component';
+import { HttpClientModule} from '@angular/common/http';
 const myRoute:Routes=[
   {
     
@@ -26,7 +27,8 @@ const myRoute:Routes=[
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    RouterModule.forRoot(myRoute)
+    RouterModule.forRoot(myRoute),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
