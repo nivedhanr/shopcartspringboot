@@ -17,7 +17,7 @@ export class UserloginComponent {
     console.log(data)
 
     if (this.email=="user" && this.password=="12345") {
-      this.route.navigate(['/'])
+      this.route.navigate(['/cardview'])
 
       alert("valid credential")
       

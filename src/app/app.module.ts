@@ -14,6 +14,8 @@ import { ViewproductComponent } from './viewproduct/viewproduct.component';
 import { SearchComponent } from './search/search.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NavbaradminComponent } from './navbaradmin/navbaradmin.component';
+import { CardviewComponent } from './cardview/cardview.component';
+import { NavuserComponent } from './navuser/navuser.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -46,6 +48,10 @@ const myRoute:Routes=[
   {
     path:"navadmin",
     component:NavbaradminComponent
+  },
+  {
+    path:"cardview",
+    component:CardviewComponent
   }
   
 ]
@@ -59,7 +65,9 @@ const myRoute:Routes=[
     ViewproductComponent,
     SearchComponent,
     NavbarComponent,
-    NavbaradminComponent
+    NavbaradminComponent,
+    CardviewComponent,
+    NavuserComponent
   ],
   imports: [
     BrowserModule,

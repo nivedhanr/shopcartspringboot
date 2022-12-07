@@ -1,33 +1,56 @@
 <div class="container">
+
     <div class="row">
+
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-            <h1 class="text-center">          User Login</h1>
-            <div class="row g-3">
 
-                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <label for="" class="form-label">Email Id</label>
-                    <input name="email" [(ngModel)]="email" type="text" class="form-control">
+            <div class="row g-3 mt-3">
 
-                </div>
-            <div class="row">
-        
-                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <label for="" class="form-label">Password</label>
-                    <input name="password" [(ngModel)]="password" type="text" class="form-control">
-                </div>
-            </div>
-            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                <button (click)="readValues()" class="btn btn-success">Login</button>
-            </div>
-            </div>
-        <div>
-            <a class="text-center"routerLink="/userreg">User Signup</a>
-            
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xl-12 col-xxl-12 text-center">
+
+                    <br><h2>USER LOGIN</h2>
+
+                    </div>
+
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xl-12 col-xxl-12">
+
+
+
+                        <label for="" class="form-label">Email ID</label>
+
+                        <input  name="email" [(ngModel)]="email"type="text" class="form-control">
+
+                    </div>
+
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xl-12 col-xxl-12">
+
+
+
+                        <label for="" class="form-label">Password</label>
+
+                        <input name="password" [(ngModel)]="password" type="password" class="form-control">
+
+                    </div> 
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xl-12 col-xxl-12 text-center">
+
+                        <button  (click)="readValues()" class="btn btn-success">Login</button>
+
+                        </div>
+
+                        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xl-12 col-xxl-12 text-center">
+
+                            <a routerLink="/userreg">User signup</a>
+
+                       
+
+                        </div>
+
+                       
 
         </div>
 
-        </div>
-        
     </div>
+
 </div>
 
+</div>

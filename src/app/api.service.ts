@@ -9,14 +9,14 @@ export class ApiService {
   constructor(private http:HttpClient) { }
   addproduct=(datatosend:any)=>
 {
-  return this.http.post("",datatosend)
+  return this.http.post("http://localhost:8080/add",datatosend)
 }
   fetchproduct=()=>
   {
-    return this.http.get("")
+    return this.http.get("http://localhost:8080/view")
 }
 fetchsearch=(datatosend:any)=>
 {
-  return this.http.post("",datatosend)
+  return this.http.post("http://localhost:8080/search",datatosend)
 }
 }
