@@ -7,6 +7,7 @@ import { AdminComponent } from './admin/admin.component';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { UserregComponent } from './userreg/userreg.component';
+import { UserloginComponent } from './userlogin/userlogin.component';
 const myRoute:Routes=[
   {
     
@@ -16,7 +17,8 @@ const myRoute:Routes=[
   declarations: [
     AppComponent,
     AdminComponent,
-    UserregComponent
+    UserregComponent,
+    UserloginComponent
   ],
   imports: [
     BrowserModule,
