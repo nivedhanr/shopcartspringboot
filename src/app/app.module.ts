@@ -12,10 +12,42 @@ import { AddproductComponent } from './addproduct/addproduct.component';
 import { HttpClientModule} from '@angular/common/http';
 import { ViewproductComponent } from './viewproduct/viewproduct.component';
 import { SearchComponent } from './search/search.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { NavbaradminComponent } from './navbaradmin/navbaradmin.component';
 const myRoute:Routes=[
   {
-    
+    path:"",
+    component:AdminComponent
+  },
+  {
+    path:"add",
+    component:AddproductComponent
+  },
+  {
+    path:"view",
+    component:ViewproductComponent
+  },
+  {
+    path:"search",
+    component:SearchComponent
+  },
+  {
+    path:"nav",
+    component:NavbarComponent
+  },
+  {
+    path:"userlogin",
+    component:UserloginComponent
+  },
+  {
+    path:"userreg",
+    component:UserregComponent
+  },
+  {
+    path:"navadmin",
+    component:NavbaradminComponent
   }
+  
 ]
 @NgModule({
   declarations: [
@@ -25,7 +57,9 @@ const myRoute:Routes=[
     UserloginComponent,
     AddproductComponent,
     ViewproductComponent,
-    SearchComponent
+    SearchComponent,
+    NavbarComponent,
+    NavbaradminComponent
   ],
   imports: [
     BrowserModule,
