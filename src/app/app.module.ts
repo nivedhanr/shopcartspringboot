@@ -10,6 +10,7 @@ import { UserregComponent } from './userreg/userreg.component';
 import { UserloginComponent } from './userlogin/userlogin.component';
 import { AddproductComponent } from './addproduct/addproduct.component';
 import { HttpClientModule} from '@angular/common/http';
+import { ViewproductComponent } from './viewproduct/viewproduct.component';
 const myRoute:Routes=[
   {
     
@@ -21,7 +22,8 @@ const myRoute:Routes=[
     AdminComponent,
     UserregComponent,
     UserloginComponent,
-    AddproductComponent
+    AddproductComponent,
+    ViewproductComponent
   ],
   imports: [
     BrowserModule,
