@@ -19,4 +19,8 @@ fetchsearch=(datatosend:any)=>
 {
   return this.http.post("http://localhost:8080/search",datatosend)
 }
+userLogin=(datatosend: any)=>{
+  
+  return this.http.post("http://localhost:8080/userlogin", datatosend)
+}
 }
