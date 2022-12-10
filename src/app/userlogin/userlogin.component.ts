@@ -18,11 +18,16 @@ export class UserloginComponent {
     console.log(data)
     this.api.userLogin(data).subscribe(
       (response:any)=>{
-        console.log(response)
+        this.email=""
+        this.password=""
         if (response.length==0) {
+          
           alert("Invalid credential")
         } else {
-          alert("Valid credential")
+          let userId=response.userid
+          console.log(userId)
+          localStorage.setItem("userinfo",userId)
+          //alert("Valid credential")
           this.route.navigate(['/cardview'])
           
         }
