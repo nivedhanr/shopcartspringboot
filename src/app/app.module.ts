@@ -16,6 +16,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { NavbaradminComponent } from './navbaradmin/navbaradmin.component';
 import { CardviewComponent } from './cardview/cardview.component';
 import { NavuserComponent } from './navuser/navuser.component';
+import { ViewprofileComponent } from './viewprofile/viewprofile.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -52,6 +53,10 @@ const myRoute:Routes=[
   {
     path:"cardview",
     component:CardviewComponent
+  },
+  {
+    path:"viewprofile",
+    component:ViewprofileComponent
   }
   
 ]
@@ -67,7 +72,8 @@ const myRoute:Routes=[
     NavbarComponent,
     NavbaradminComponent,
     CardviewComponent,
-    NavuserComponent
+    NavuserComponent,
+    ViewprofileComponent
   ],
   imports: [
     BrowserModule,
