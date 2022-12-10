@@ -28,7 +28,7 @@ export class UserloginComponent {
           console.log(userId)
           localStorage.setItem("userinfo",userId)
           //alert("Valid credential")
-          this.route.navigate(['/cardview'])
+          this.route.navigate(['/viewprofile'])
           
         }
       }
